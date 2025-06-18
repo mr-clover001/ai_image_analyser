@@ -14,40 +14,7 @@ Ensure you have the following installed:
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or a local MongoDB instance
 - [Ollama](https://ollama.com/) (to run the LLaVA Vision model locally)
 
-### 2. 📁 Clone the Repository
-
-```bash
-git clone https://github.com/your-username/ai-image-analyser.git
-cd ai-image-analyser
-```
-
-### 3. 💪 Backend Setup (Node.js + Express)
-
-```bash
-cd ai_image_analysis_backend
-npm install
-```
-
-#### ➕ Create a `.env` file
-
-Inside `ai_image_analysis_backend`, create a `.env` file:
-
-```env
-PORT=5050
-MONGO_URI=your_mongodb_connection_string
-```
-
-> Replace `your_mongodb_connection_string` with your MongoDB Atlas URI or local MongoDB URI.
-
-#### ▶️ Run Backend Server
-
-```bash
-npm start
-```
-
-Backend will run at: `http://localhost:5050`
-
-### 4. 🌐 Frontend Setup (React + Vite)
+### 1. 🌐 Frontend Setup (React + Vite)
 
 ```bash
 cd ../ai_image_analyser
@@ -56,19 +23,6 @@ npm run dev
 ```
 
 Frontend will run at: `http://localhost:8080`
-
-### 5. 🧠 Start Ollama (LLaVA Model)
-
-Install and run the LLaVA model via Ollama:
-
-```bash
-ollama pull llava
-ollama run llava
-```
-
-> Keep this terminal running to allow the backend to query the model.
-
----
 
 ## 📄 Documentation
 
@@ -127,7 +81,7 @@ ai-image-analyser/
 
 ## 🎥 Demo Video
 
-> Please refer to the [Demo Video Link Here](#) for a walkthrough of:
+> Please refer to the [Demo Video Link Here](https://drive.google.com/file/d/1TwzQvGfEwj4mbqD4uTlfnQA0hlMVl40f/view?usp=drivesdk) for a walkthrough of:
 >
 > - Uploading an image
 > - Running the LLaVA model
@@ -139,4 +93,3 @@ ai-image-analyser/
 ## ✅ AI Tool Usage
 
 See `AI_USAGE.md` for complete details on how Ollama and LLaVA were integrated for vision analysis.
-
